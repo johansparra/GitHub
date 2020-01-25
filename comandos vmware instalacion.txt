@@ -1,0 +1,69 @@
+Login: admin
+Password:admin
+Press any key to continue.
+Enable Secure Backup mode?:y
+Confirme Secure Backup mode?:y
+Enable Common Criteria Compatibility mode?:n
+Please enter the new password: sebas1234
+Please re-enter the new password to confirm: sebas1234
+Do you want to run the install wizard? y
+Do you want to configure network interfaces? y
+Do you have this information?:y
+Do you want to configure the eth0 interface?y
+Do you want to enable DHCP:Y
+LAS OTRAS 3 AUTOMATICO REPETIR-------------------------------
+Do you want to configure network service? y
+Do you want to configure DNS? n
+do you want to defne a unique system identifer for all applicance:y
+Eneter a unique system identifier:datapower
+Do you want to configure remote magnament acces? y
+Do you have this information ?y
+Do you want to enable SSH?n
+Do you want to enable telnet?n
+Do you want to enable webgui?y
+enter the local IP adress [0 for all]:0
+Enter the port number:9090
+Do you want to confire a user account that can reset ?n
+Do you want to confire the RAID array ?n
+Do you want to save the current configuration?y
+
+-------------------------------
+co
+web-mgmt
+admin-state enabled
+write mem
+exit
+show int
+--------------MIRAR LA ET0 Y PONERLA EN LA SIGUIENTE LINEA EJEMPLO 192.168.0.34 y dejarla tambien para ssh
+web-mgmt 192.168.0.34 9090
+ssh 192.168.0.34 22
+write mem
+
+
+----------------------una vez cargada
+co
+show int
+----verificar si esta la interfaz
+show  web-mgmt
+--------------MIRAR LA ET0 Y PONERLA EN LA SIGUIENTE LINEA EJEMPLO 192.168.0.34
+web-mgmt 192.168.0.34 9090
+write mem
+
+
+quitar timeout
+Network
+Managment
+WebManagment Service	
+idle timeout =0
+
+-----------
+muestra las interfaces y si estan activas
+co
+show network-interface
+
+-------------------
+para ponerlo desde linea de comando en la terminal y no en la maquina virtual (verificar si tambien funciona en windows)
+ssh <IP WEB-MGMT>
+ssh 192.168.0.34
+
+
