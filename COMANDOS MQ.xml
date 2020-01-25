@@ -1,0 +1,13 @@
+runmqsc IIBQMDP < C:\Users\Sebas\Desktop\broker DATA POWER BUS\Periferia_periferia\MQ\CreateQueues.mqsc
+
+<!-- Cargar las colas por documento de texto-->
+runmqsc IIBQMDP < C:\Users\Sebas\IBM\IIBT10\workspace\Lab07\Datapower.mqsc
+runmqsc PRUEBA < C:\Users\Sebas\IBM\IIBT10\workspace\Lab07\Datapower.mqsc
+
+runmqsc IIBQM08 < "C:\Users\Sebas\Desktop\broker DATA POWER BUS\Periferia_periferia\CreateQueues.mqsc"
+runmqsc IIBQM08 < C:\Users\Sebas\IBM\IIBT10\workspace\Lab08\CreateQueues.mqsc
+PUERTO 1408
+
+
+datapower
+port 2090
