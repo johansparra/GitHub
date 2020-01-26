@@ -1,0 +1,56 @@
+Comandos GIT 
+
+<!--  ***CLONAR 01 CLONAR PROYECTOS***
+Sebas@DESKTOP-RI7FVPA MINGW64 ~/Desktop/broker DATA POWER BUS/ssl    
+-->
+$ git clone https://github.com/Aarnold0210/Exercises_Datapower.git
+<!--  ***CLONAR 02***
+Sebas@DESKTOP-RI7FVPA MINGW64 ~/Desktop/broker DATA POWER BUS/ssl    
+-->
+$ cd Exercises_DataPower /
+<!--  ***CLONAR 03***
+Sebas@DESKTOP-RI7FVPA MINGW64 ~/Desktop/broker DATA POWER BUS/ssl/Exercises_DataPower (master)    
+-->
+$ git branch -all
+<!--  ***CLONAR 04 PARA CAMBAIR ENTRE RAMAS ***
+Sebas@DESKTOP-RI7FVPA MINGW64 ~/Desktop/broker DATA POWER BUS/ssl/Exercises_DataPower (master)    
+-->
+$ git checkout master 
+<!--  ***CLONAR 05 PARA INICIAR METODOLOGIA GIT***
+Sebas@DESKTOP-RI7FVPA MINGW64 ~/Desktop/broker DATA POWER BUS/ssl/Exercises_DataPower (master)    
+-->
+$ git flow init
+
+<!--  ***CLONAR 01NO*<FEATURE><HOTFIX><RELEASE/BUGFIX><SUPPORT>  +   NOMBRE DEL NUEVO CAMBIO**
+Sebas@DESKTOP-RI7FVPA MINGW64 ~/Desktop/broker DATA POWER BUS/ssl/Exercises_DataPower (master)    
+-->
+$ git checkout feature/C0006
+<!--
+Sebas@DESKTOP-RI7FVPA MINGW64 ~/Desktop/broker DATA POWER BUS/ssl/Exercises_DataPower (master)    
+-->
+$ git flow feature start C0007
+<!--
+Sebas@DESKTOP-RI7FVPA MINGW64 ~/Desktop/broker DATA POWER BUS/ssl/Exercises_DataPower (master)    
+-->
+$ git flow feature finish C0007
+
+<!--   ***MOSTRAR RAMAS 01 ***
+Sebas@DESKTOP-RI7FVPA MINGW64 ~     
+-->
+$ cd "C:\Users\Sebas\Desktop\broker DATA POWER BUS\ssl\Exercises_DataPower"
+
+<!--   ***MOSTRAR RAMAS 02 ***
+Sebas@DESKTOP-RI7FVPA MINGW64 ~/Desktop/broker DATA POWER BUS/ssl/Exercises_DataPower (feature/C0006)
+        ***FIN MOSTRAR RAMAS   ****-->
+$ gitk --all
+
+<!--   ***PARA ACTUALIZAR REPORSITORIO 01 ***
+-->
+$git pull
+<!--   ***PARA SUBIR CAMBIOS DEL REPOSITORIO LOCAL AL REPOSITORIO REMOTO01 ***
+-->
+$git push
+<!--   ***PARA SUBIR  01 ***
+-->
+$git finish
+

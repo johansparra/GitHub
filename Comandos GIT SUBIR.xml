@@ -1,0 +1,164 @@
+<!--
+recaudo:fuentes del borker
+recaudo_ejec: Scripts Colas, Scripts bases de datos y BAR
+datapower_recaudos:export de datapower
+
+***** Configurar repositorio para utilizar la metodologia Git Flow *****
+
+1. Se debe clonar en una carpeta local el repositorio a trabajar siempre sobre la rama master.
+2. Hacer un checkout sobre la rama develop  y ubicarse sobre esta rama.: git checkout develop
+3. Git flow necesita ser inicializado: git flow init
+4. Digite el siguiente comando : git config --global core.autocrlf false
+5. Digite el siguiente comando : git config --global core.editor notepad
+6. Para salir digitar el comando : exit
+ -->
+git clone -b master //10.236.4.10/recaudo
+git clone -b master //10.236.4.10/recaudo_ejec
+git clone -b master //10.236.4.10/Datapower_Recaudos
+ 
+---PASOS   N1
+<!--1. Repositorio donde se guardara. Clonar todo el repositorio en la carpeta click git bash here D:\Git 
+       son 3 carpetas recaudo, recaudo_ejec,Datapower_Recaudos.    
+  -->
+git clone -b master //10.236.4.10/recaudo
+<!--2. Entrar a la carpeta darle click git bash here.
+       Cambiar entre ramas a DEVELOP                                     -->
+git checkout develop      <!--Darle enter como 9 veces-->
+<!--3. Iniciar metodologia GIT                                           -->
+git flow init
+<!--4. Digite el siguiente comando                                       -->
+git config --global core.autocrlf false
+<!--5. Digite el siguiente comando                                       -->
+git config --global core.editor notepad
+<!--6. Salir cerrar git                                                  
+  -->
+exit
+
+
+<!--
+***** Crear rama  feature en el repositorio *****
+Realizar PASOS N1
+1. Ubicarse siempre sobre la rama develop
+2. Git flow necesita ser inicializado: git flow init
+3. Digitar el comando: git flow feature start C12673
+4. Digitar el comando: git status
+5. Digitar el comando: git add.
+6. Digitar el comando: git commit -m "Paso UAT EmpresasPublicasNevia C13983 - Version Inicial"
+7. Verificar con: gitk
+8. Comando para versionar en el repositorio local: git flow feature finish C13983 
+9. Comando para versionar en el repositorio remoto: git push origin develop 
+10. Para salir digitar el comando : exit
+ -->
+ ---PASOS   N2
+<!--1. Ubicarse en la rama develop    
+  -->
+git checkout develop
+<!--2. Iniciar metodologia GIT                                          
+  -->
+git flow init
+<!--3. Crear rama con el numero de cambio C#####  
+  -->
+git flow feature start C13983 
+<!--4. Verificar el status de las carpetas y archivos
+       aparecen de colo rojo los nuevos 
+  --> 
+git status
+<!--5. Agregar todos los nuevos objetos a la carpeta
+  --> 
+gid add .
+<!--6. Crear el commit del cambio Nombre del servicio con numero Cambio
+  -->
+git commit -m "Paso UAT EmpresasPublicasNevia - C13983 - Version Inicial"
+<!--7. Verificar las ramas
+  --> 
+gitk --all
+<!--8. Subir Nuevo cambio rama en la maquina remota
+  -->
+git push origin feature/C13983 
+  
+--------------------------------------------------------CERTIFICADO-------------------------------------------------------------------------------  
+  
+---UNA VEZ SE CERTIFIQUE REALIZAR LOS SIQUIENTES PASOS  
+git flow feature finish C13983 
+<!--9. Para versionar en el repositorio remoto
+  -->
+git push origin develop
+<!--10. Salir cerrar git                                                 
+  -->
+exit
+
+
+---UNA VEZ SE CERTIFIQUE REALIZAR LOS SIQUIENTES PASOS
+ <!--
+Realizar PASOS N1 
+1. Ubicarse siempre sobre la rama master
+2. Git flow necesita ser inicializado: git flow init
+3. Digitar el comando: git flow release start C13983
+4. Digitar el comando: git flow release finish C12803 -m "Paso produccion EmpresasPublicasNevia C12803 - Version Final"
+5. Digitar el comando: git push origin master
+6. Verificar con: git branch -a
+7. Para salir digitar el comando : exit
+ --> 
+ ---PASOS   N3 
+<!--1. Ubicarse en la rama master    
+  -->
+git checkout master
+<!--2. Iniciar metodologia GIT
+  -->
+git pull origin master
+
+git flow init
+<!--3. Realizar el merge con la rama master unifica el nodo  
+  --> 
+git flow release start C13983
+<!--4. Termina la rama 
+  --> 
+git flow release finish C12803 -m "Paso produccion EmpresasPublicasNevia - C12803 - Version Final" 
+<!--5. Push envía los cambios que se han hecho en la rama principal de los repositorios
+     remotos que están asociados con el directorio que está trabajando. 
+  --> 
+git push origin master 
+<!--6. Verificar las ramas activas 
+  -->  
+git branch -a
+<!--7. Salir cerrar git                                                 
+  -->
+exit
+-----------------------------------------------------------------------------------------------------------------------------------------
+--Devolverse al nodo anterior "NO ELIMINA RAMA"
+<!--1. Iniciar metodologia GIT
+  -->
+git flow init
+<!--2. Ubicarse en la rama develop    
+  -->
+git checkout develop
+<!--3. Verificar bien el sha1 para devolverse al punto que se quiere lo ideal no regresarse mas de 2 
+si ya esta en remoto no es recomendable reversar
+  -->
+git reset 9as8dasd9e5dqw595das9d5asd5asdas --hard
+
+-----------------------------------------------------------------------------------------------------------------------------------------
+
+
+--ELIMINAR EL FEATURE SI QUEDO MAL -- ELIMINA TODO EL FEATURE
+<!--1. Iniciar metodologia GIT
+  -->
+git flow init
+<!--2. Ubicarse en la rama develop    
+  -->
+git checkout develop
+<!--3. Eliminar rama feature
+  -->
+git push origin --delete feature/C14256
+<!--4.Mirar si esta abierto el nodo o el feature aparecera en rojo
+  -->
+git branch -r
+
+
+
+
+
+
+
+
+

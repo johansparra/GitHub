@@ -1,0 +1,43 @@
+git clone <url del repositorio> -> Clona proyecto
+git pull -> actualiza el repositorio
+git checkout <rama> -> cambia a la rama deseada.
+git flow init -> Inicia la metodología git flow en el repositorio.
+git flow <feature/hotfix/release/bugfix/support> start <nombre rama/numero de cambio>
+
+git flow <develop/feature/hotfix/release/bugfix/support> finish <nombre rama/numero de cambio>
+git branch -a -> muestra las ramas del repositorio
+gitk -a muestra el árbol de cambios del repositorio junto con sus gráficas de manera visual.
+git push -> sube los cambios del repositorio local al repositorio remoto.
+git add * -> añade los todos los archivos
+git add <file_name>
+git add -f */<file_name>
+git rm *
+git rm <file_name>
+git commit -m '<tag>
+
+<message>'
+
+
+GIT FLOW COLP
+git flow init
+master y la develop
+?---------SE UTILIZA ---------------?
+git flow feature start C000X
+realiza los cambios
+git add -f *
+git commit -m '<tag>
+
+<message>'
+git push
+git flow feature finish C000X
+git push
+<!queda en la rama develop>
+git flow release start C000X
+git push
+git commit -m '<tag>
+
+<message>'
+git push
+git flow finish release C000X
+git push
+--------------

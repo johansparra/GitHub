@@ -11,7 +11,8 @@
 	7. git rm  archivo : se elimina el archivo
 	8. git log : muestra todos los commit realizados
 	9. git checkout -b develop : crea una nueva rama
-	10. git push origin master: origin quiere decir remoto segido del nomnre de la rama qeu se quiere publicar
+	10.git push origin master: origin quiere decir remoto segido del nomnre de la rama qeu se quiere publicar
+	11.git pull origin amster: actualiza a el ultimo comit o descarga ese punto de la rama
 </Definiciones>
 
 <cambio>
@@ -95,5 +96,9 @@ GITHUB
 git remote add origin https://github.com/johansparra/GitHub.git
 git push -u origin master
 </trabajarsobreproyecto>
+<clone>
+git clone https://github.com/johansparra/GitHub.git
+git pull origin master
+</clone>
 
 
