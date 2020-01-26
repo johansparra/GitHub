@@ -70,5 +70,10 @@ git rm "libro1 DATAPOWER.pdf"
 git log
 </log>
 
+<rama>
+git checkout -b develop
+git add .
+git commit -m "se crea una rama y se edita un archivo"
+</rama>
 
 
