@@ -76,4 +76,23 @@ git add .
 git commit -m "se crea una rama y se edita un archivo"
 </rama>
 
+<fucionarramamaster>
+<!-- se tiene que estar en la rama a la cual quieren ser funionados la principal -->
+git checkout master
+git merge develop
+git add .
+git commit -m "se crea una rama y se edita un archivo"
+</fucionarramamaster>
+<elimianrrama>
+git branch -d develop
+</elimianrrama>
+
+
+
+GITHUB
+<trabajarsobreproyecto>
+git remote add origin https://github.com/johansparra/GitHub.git
+git push -u origin master
+</trabajarsobreproyecto>
+
 
