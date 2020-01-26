@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Metodologia Git DevCode -->
+
+<Definiciones>
+	1. git status: muestra el estado de los archivos
+	2. git add: agregar nuevos  archivos o agragar  git add . para agragar todos los archivos
+	3. git reset Head XXX.txt : cuando estan en stagin en VERDE esta listo para ser confirmados los que estan en ROJO no se suben 
+	4. git commit -m "texto de la descripcion": crea un punto de control  
+	5. gitk --all : muestra las ramas y arbol de forma grafica		
+	6. git checkout archivo : para recupera un archivo
+	7. git rm  archivo : se elimina el archivo
+	8. git log : muestra todos los commit realizados
+</Definiciones>
+
+<cambio>
+<!--Cambiar de disco local C a D en CMD en ruta inicial cd ..  que solo se vea el c-->
+cd/d D:\DATAPOWER VM\DataPower\GitHub
+</cambio>
+
+<crearignore>
+<!--Desde CMD crear un archivo llamadao .gitignore   
+	   editar y agregar el nombre o ruta de los archivos que no quiere subir ejemplo images/ -->
+type nul > .gitignore
+</crearignore>
+
+<configuracion>
+<!-- Login cuenta -->
+git config --global user.name "johansparra"
+git config --global user.email ing.sebasparra@gmail.com
+
+<!-- Muestra el listado de configuracion de Git-->
+git config --list
+</configuracion>
+
+<iniciar>
+<!--Iniciar metodologia Git se puede sobre una carpeta vacia -->
+git status
+git init
+git add XXXXX.txt
+git status
+git commit -m "Inicio se añade el archivo comandos vmware instalacion.txt"
+</iniciar>
+
+<stage>
+git add X1XXX.txt
+git add X2XXX.txt
+git reset head X2XXX.txt
+git commit -m "se sube solo el archivo X1XXX.txt"
+</stage>
+
+<ignore>
+	<!-- Realizar paso 5-->
+git add .
+git commit -m "se agrega el archivo .gitignore"
+</ignore>
+
+<recupear>
+<!-- recupera un archivo ejemplo se elimino X1XXX.txt NOTA: siempre y caudno no se alla echo un commit  -->
+git status
+git checkout X1XXX.txt
+</recupear>
+
+<eliminar>
+<!-- si se quiere eliminar un archivo  -->
+git rm "libro1 DATAPOWER.pdf"
+</eliminar>
+
+<log>
+git log
+</log>
+
+
+
