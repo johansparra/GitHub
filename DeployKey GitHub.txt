@@ -10,3 +10,8 @@
 
 # ahora una vez terminado se crean 2 archivos copiarlos en la ruta C:\Users\Sebas\.ssh
 o tenerlos pos si se le pide conexion ssh
+
+
+
+
+se abre el documento se copia y se pega en la pagina
