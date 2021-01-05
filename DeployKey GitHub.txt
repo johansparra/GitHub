@@ -1,0 +1,12 @@
+#Se abre openssl o gitbash para crear key, se pone el correo con el cual se ha creado la cuenta en git
+	ssh-keygen -t rsa -b 4096 -C "ing.sebasparra@gmail.com"
+	
+#Despues se le pone un nombre cualquiera para crear el archivo, lo mejor seira el nombre del repositorio
+#Ahora se le pide que ingrese la contraseña
+%*j0h4ns92ap*%
+# y se vuelve a repetir la contrasña
+%*j0h4ns92ap*%
+
+
+# ahora una vez terminado se crean 2 archivos copiarlos en la ruta C:\Users\Sebas\.ssh
+o tenerlos pos si se le pide conexion ssh
