@@ -1,0 +1,8 @@
+usuario:ubuntu
+pass:johansparra
+
+
+sudo apt-get update
+sudo apt upgrade
+
+sudo apt install tasksel

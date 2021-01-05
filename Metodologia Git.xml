@@ -72,11 +72,11 @@ git rm "libro1 DATAPOWER.pdf"
 git log
 </log>
 
-<rama>
+<crearrama>
 git checkout -b develop
 git add .
 git commit -m "se crea una rama y se edita un archivo"
-</rama>
+</crearrama>
 
 <fucionarramamaster>
 <!-- se tiene que estar en la rama a la cual quieren ser funionados la principal -->
@@ -85,11 +85,10 @@ git merge develop
 git add .
 git commit -m "se crea una rama y se edita un archivo"
 </fucionarramamaster>
+
 <elimianrrama>
 git branch -d develop
 </elimianrrama>
-
-
 
 GITHUB
 <trabajarsobreproyecto>
